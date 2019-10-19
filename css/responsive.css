@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@media all and (max-width: 1200px) {
+	html {
+		font-size: 14px;
+	}
+	body {
+		min-width: 380px;
+	}
+	.time-wrapp {
+		width: 90%;
+	}
+	#slide {
+		width:90%;
+	}
+	.content-wrapp {
+		width: 90%;
+	}
+	.map-wrapp {
+		width: 90%;
+	}
+	.inquiry-wrapp {
+		width: 90%;
+	}
+	.tel {
+		pointer-events: auto;
+	}
+}
+
+@media all and (max-width: 670px) {
+	html {
+		font-size: 13px;
+	}
+	body {
+		min-width: 380px;
+	}
+	.tunes p {
+		font-size: 1.2rem;
+	}
+	.br-sp {
+		display: inline;
+	}
+	.guest {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.guest-text {
+		margin: 0;
+		width: 90%;
+	}
+	.guest-text h3 {
+		padding: 0.5rem 0;
+	}
+	.guest-text h3 span {
+		font-size: 0.9rem;
+		padding-right: 0;
+	}
+	.guest-img {
+		width: 50%;
+		margin: 0;
+	}
+	.attention p {
+		font-size: 1.2rem;
+	}
+	.tel {
+		pointer-events: auto;
+	}
+
+}

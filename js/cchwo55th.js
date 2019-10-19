@@ -14,8 +14,12 @@ $(function(){
 		fade :true,
 		arrows :true,
 		prevArrow: '<img src="55thimage/slide_prev.png" class="slide-arrow prev-arrow"/>',
-		nextArrow: '<img src="55thimage/slide_next.png" class="slide-arrow next-arrow"/>'
-
+		nextArrow: '<img src="55thimage/slide_next.png" class="slide-arrow next-arrow"/>',
+		responsive: [{
+			breakpoint: 1200,settings: {
+				arrows: false
+			}
+		}]
 	});
 });
 

@@ -4,24 +4,21 @@
 	box-sizing: border-box;
 	overflow: none;
 }
-
-/*-- body --*/
+html { font-size: 15px;}
+.br-sp { display: none;}
 body {
-	margin :0;
+	margin :0 auto;
 	padding :0;
-	font-size:62.5%;
 	overflow :none;
 	font-family: "Hiragino Kaku Gothic ProN", "MS PGothic";
 	min-width :1200px;
+	max-width :1800px;
 	background-color :#212532;
 }
-li {
-	list-style: none;
-}
+li { list-style: none;}
 
-/*-- top frame --*/
 header {
-	height :50px;
+	height :5rem;
 	left :0;
 	margin :0;
 	position :fixed;
@@ -35,17 +32,13 @@ header {
 	cursor: pointer;
 }
 .logo {
-	height:50px;
+	height:4.9rem;
 }
-
-/*-- under frame --*/
 #under-frame {
 	margin :0;
 	_overflow :auto;
 	padding :0;
 }
-
-/*-- title --*/
 .headBox {
 	margin :0;
 	padding-bottom :25px;
@@ -56,11 +49,9 @@ header {
 	border-bottom :solid 1px #7c7c7c;
 	background-color: #384159;
 }
-
-/*-- title（h1）--*/
 .headBox h1 {
 	margin :0;
-	padding-top :70px;
+	padding-top :6rem;
 	color :#f4f4f4;
 	font-size :2.3rem;
 	font-weight: normal;
@@ -68,26 +59,30 @@ header {
 	letter-spacing: 5px;
 	z-index :11;
 }
-
-/* 日時など */
-.time {
-	margin :0 auto;
-	padding :0;
-	height :15rem;
+.time-wrapp {
+	margin :2rem auto 1rem auto;
 	width :70%;
-	position :relative;
-	top :2rem;
 }
-.time p {
-	margin-bottom: 5px ;
-	position: relative;
+.time-wrapp p {
+	margin-bottom: 0.5rem;
 	font-size :1.4rem;
 	text-align: center;
 	letter-spacing: 1px;
 	color: #f4f4f4;
 }
+.place, .time {
+	width: 100%;
+}
 .indent {
-	padding-top :1rem;
+	display: block;
+	line-height: 2rem;
+	margin: 2rem 0;
+}
+.section {
+	background-color: #565865;
+	line-height: 2.5rem;
+	display: inline-block;
+	padding: 0 1rem;
 }
 
 /*-- スライド --*/
@@ -139,16 +134,19 @@ header {
 	overflow :hidden;
 	padding: 0;
 	margin :0 auto;
-	height :3rem;
 	text-align :center;
+	height: 4rem;
+	background: #f4f4f4;
 }
 .tab li {
 	margin :0 auto;
 	padding :0;
-	height :100%;
+	line-height: 3rem;
 	width :50%;
+	vertical-align: middle;
 	list-style-type :none;
-	background :#ccc;
+	border: solid 0.8px #888;
+	background: #212532;
 	color :#888;
 	display :inline-block;
 	font-size :1.5rem;
@@ -156,9 +154,22 @@ header {
 }
 
 .tab li.select {
-	background :#f4f4f4;
-	color :#255C99;
+	/*background: #bac2cf;*/
+	border: solid 0.8px #ADCDEC;
+	background: #ADCDEC;
+	color :#384159;
+	position: relative;
 }
+.select:after {
+	position: absolute;
+	content:'';
+	border: 14px solid transparent;
+	border-top: 14px solid #ADCDEC;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 
 .content {
 	top: 0;
@@ -170,7 +181,6 @@ header {
 .contents {
 	margin: 0 auto;
 	background: #f4f4f4;
-
 	width: 100%;
 	padding-bottom: 1rem;
 	top: 0;
@@ -184,34 +194,54 @@ header {
 	color: #414e72;
 	text-decoration: underline;
 }
-.contents p {
-	font-size:1rem;
+.tunes {
+	padding-bottom: 1rem;
+}
+.tunes p {
+	font-size:1.3rem;
 	padding: 0.5rem 0;
 	color: #384159;
+}
+.tunes p span {
+	font-size: 1rem;
+	padding-left: 0.9rem;
 }
 
 .guest {
 	display: flex;
-	flex-wrap:nowrap;
-	justify-content:space-between;
-	height: 20rem;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 1rem;
 }
-
 .guest-text {
 	margin-left: 1rem;
-	width: 60%;
+	flex-basis: 70%;
 }
 .guest-text h3 {
 	font-weight: normal;
-	font-size:1rem;
-	padding: 0.5rem 0;
+	font-size:1.2rem;
+	padding: 1rem 0;
 	color: #384159;
 }
-
+.guest-text h3 span {
+	font-size: 0.9rem;
+	padding-right: 1rem;
+}
+.guest-text p {
+	font-size:1rem;
+	text-align: left;
+	text-indent: 1rem;
+	padding: 0.2rem 0;
+	color: #384159;
+}
 .guest-img {
-	width: 40%;
-	height: auto;
+	max-width: 30%;
 	margin-right: 1rem;
+}
+.guest-img img {
+	max-width: 90%;
+	max-height: 280px;
 }
 .common {
 	background: #f4f4f4;
@@ -223,7 +253,6 @@ header {
 	font-size:1rem;
 	padding: 0.5rem 0;
 	color: #384159;
-	z-index: 999;
 }
 
 /* Google Map */
@@ -249,6 +278,9 @@ header {
 	color: #1111cc;
 	margin-bottom: 1rem;
 }
+.access a span {
+	padding-left: 0.2rem;
+}
 .attention p {
 	font-size: 1.5rem;
 	color: #ff4500;
@@ -260,43 +292,42 @@ header {
 	width: 100%;
 	height: 30rem;
 }
+
+.inquiry-wrapp {
+	margin: 2rem auto;
+	padding: 0 0 2rem 0;
+	text-align: center;
+	background: #f4f4f4;
+	width: 70%;
+}
+.inquiry-wrapp p {
+	line-height: 1.5rem;
+	font-size: 1rem;
+	padding: 0.5rem 0;
+	color: #384159;
+}
+.inquiry-wrapp p span{
+	margin-left: 1rem;
+	font-size: 0.8rem;
+
+}
+.tel {
+	cursor: default;
+	pointer-events: none;
+	color: #1111cc;
+	font-size: 1rem;
+}
+.tel img {
+	height: 1rem;
+}
+
 footer {
 	display: inline-block;
 	margin: 5rem auto 0 auto;
 	background-color :rgba(240 ,248 ,255, 0.7);
-	height: 50px;
+	height: 5rem;
 	width: 100%;
 }
-
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/*----------------*/
-/*---- device ----*/
-/*----------------*/
-
-
-@media (max-device-width: 670px) {
-
-body {
-	min-width: 300px;
-	font-size:70%;
-	line-height : 1;
-	overflow	:hidden;
-	-webkit-text-size-adjust : 100%;
-}
-.time {
-	width: 90%;
-}
-
-/*---- slide ----*/
-
-#slide {
-	width:90%;
-}
-.content-wrapp {
-	width: 90%;
-}
-.map-wrapp {
-	width: 90%;
+footer p {
+	padding: 0.3rem 0 0 1rem;
 }
