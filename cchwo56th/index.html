@@ -5,12 +5,18 @@
         <meta charset="UTF-8">
         <title>CCHWO第56回定期演奏会</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/normalize.css">    
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
         <link rel="stylesheet" href="css/cchwo56th.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400&display=swap" rel="stylesheet">
 
         <script src="js/jquery-1.8.2.min.js"></script>
         <script src="js/cchwo56th.js"></script>
+        <script src="slick/slick.min.js"></script>
 
     </head>
     <body>
@@ -28,19 +34,36 @@
 
                 <!-- headerRight start -->
                 <div class="headerRight">
-                    <div class="humberger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="menuItem">
-                        <a href="https://cchwindorchestra.jimdo.com/">
-                            <p>公式サイト</p>
-                        </a>
-                        <a href="https://cchwindorchestra.jimdo.com/">
-                            <img class="twitterIcon" src="image/Twitter_Logo_Blue.png">
-                        </a>
-                    </div>
+                    <a id="humberger" class="humberger" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <!-- menuItem start -->
+                    <ul id="drawer" class="menuItem">
+                        <li><a href="#top"    >トップ</a></li>
+                        <li><a href="#program">プログラム</a></li>
+                        <li><a href="#access" >アクセス</a></li>
+                        <li><a href="#inqyury">お問合わせ</a></li>
+                        <li>
+                            <a href="#">リンク</a>
+                            <ul>
+                                <li>
+                                    <a href="https://cchwindorchestra.jimdo.com/">
+                                        公式サイト
+                                        <img class="outsideIcon" src="image/window.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/cchwind" target="_blank" rel="noopener noreferrer">
+                                        Twitter
+                                        <img class="outsideIcon" src="image/window.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- menuItem end-->
                     
                 </div>
                 <!-- headerRight end -->
@@ -48,6 +71,7 @@
             <!-- fixedHeader end -->
 
             <!-- titleBox start -->
+            <a id="top" class="anchor"></a>
             <div class="titleBox">
                 <h1>千葉商業高校吹奏楽部<br>第56回 定期演奏会</h1>
             </div>
@@ -81,9 +105,9 @@
                 <!-- slide start -->
                 <div id="slide">
                     <ul id="slide1">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><img src="image/slide1.jpg"></li>
+                        <li><img src="https://placehold.jp/e8c899/ffffff/1120x630.png?text=Comming%20soon"></li>
+                        <li><img src="image/slide3.jpg"></li>
                     </ul>
                 </div>
                 <!-- slide end -->
@@ -91,9 +115,10 @@
                 <!-- detailWrapp start -->
                 <div class="detailWrapp">
                     <!-- tab start-->
+                    <a id="program" class="anchor"></a>
                     <ul class="tab">
-                        <li class="select">昼の部</li>
-                        <li>夜の部</li>
+                        <li class="select" tabindex="0">昼の部</li>
+                        <li tabindex="0">夜の部</li>
                     </ul>
                     <!-- tab end -->
                     <ul class="tabColor"></ul>
@@ -124,13 +149,13 @@
                                     <!-- guestText start -->
                                     <div class="guestText">
                                         <h3><span>肩書き</span>昼の部 ゲスト氏名</h3>
-                                        <p>ゲスト説明文1です。夜です。</p>
+                                        <p>ゲスト説明文1</p>
                                         <p>ゲスト説明文2</p>
                                         <p>ゲスト説明文3</p>
                                     </div>
                                     <!-- guestText end-->
                                     <div class="guestImg">
-                                        <img src="image/logo.png" alt="げすとしめい">
+                                        <img src="https://placehold.jp/e8c899/ffffff/200x280.png?text=Comming%20soon" alt="げすとしめい">
                                     </div>
                                 </div>
                                 <!-- guest end -->
@@ -162,13 +187,13 @@
                                     <!-- guestText start -->
                                     <div class="guestText">
                                         <h3><span>肩書き</span>夜の部 ゲスト氏名</h3>
-                                        <p>ゲスト説明文1だよ。夜だよ。</p>
+                                        <p>ゲスト説明文1</p>
                                         <p>ゲスト説明文2</p>
                                         <p>ゲスト説明文3</p>
                                     </div>
                                     <!-- guestText end-->
                                     <div class="guestImg">
-                                        <img src="image/logo.png" alt="げすとしめい">
+                                        <img src="https://placehold.jp/cacbe6/ffffff/200x280.png?text=Comming%20soon" alt="げすとしめい">
                                     </div>
                                 </div>
                                 <!-- guest end -->
@@ -194,6 +219,7 @@
                 <!-- detailWrapp end -->
 
                 <!-- mapWrapp start -->
+                <a id="access" class="anchor"></a>
                 <div class="mapWrapp">
                     <!-- access start -->
                     <div class="access">
@@ -230,9 +256,10 @@
                 <!-- mapWrapp end -->
 
                 <!-- inquiryWrapp start -->
+                <a id="inqyury" class="anchor"></a>
                 <div class="inquiryWrapp">
                     <h2 class="contentTitle">
-                        <span class="marker_water">お問い合わせ</span>
+                        <span class="marker_water">お問合わせ</span>
                     </h2>
                     <p><span>千葉商業高等学校</span>スズカケ</p>
                     <a href="tel:043-251-6335" class="tel">
@@ -244,6 +271,10 @@
 
             </div>
             <!-- bodyContainer end -->
+
+            <footer>
+                    <p>Chiba Commercial High school Wind Orchestra.</p>
+            </footer>
 
         </div>
         <!-- container end -->

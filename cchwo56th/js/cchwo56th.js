@@ -1,10 +1,49 @@
 var tabs = document.getElementsByClassName
-
+window.addEventListener('load', function () {
+    var slide1 = document.getElementById('slide1');
+    // slide1.addEventListener('');
+},false);
 
 function clickTab() {
 
 }
 
+$(function() {
+    $('#humberger').on('click', function(){
+        $(this).toggleClass('active');
+        $('#drawer').toggleClass('open');
+        return false;
+    });
+});
+
+$(function() {
+    $('#slide1').slick({
+        dots: true,
+        dotsClass: 'slide-dots',
+        autoplay :true,
+        autoplaySpeed :7000,
+        speed :500,
+        infinite :true,
+        centerMode :true,
+        centerPadding :'75%',
+        adaptiveHeight :true,
+        fade :true,
+        arrows :true,
+        prevArrow: '<div class="slide-arrow prev-arrow fa fa-angle-left"/>',
+        nextArrow: '<div class="slide-arrow next-arrow fa fa-angle-right"/>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                arrows: false
+            }
+        }],
+        customPaging: function(slick, index){
+            var num = slick.$slides.eq(index).html();
+            console.log(num);
+            return '●';
+        }
+    });
+});
 /**
  * タブ切り替え
  */
