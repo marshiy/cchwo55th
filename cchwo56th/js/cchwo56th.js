@@ -10,9 +10,20 @@ function clickTab() {
 
 $(function() {
     $('#humberger').on('click', function(){
-        $(this).toggleClass('active');
+        $('#humberger').toggleClass('active');
         $('#drawer').toggleClass('open');
-        return false;
+        $(document.body).toggleClass('lock');
+    });
+    $('#drawer').on('click', function() {
+        $('#humberger').toggleClass('active');
+        $('#drawer').toggleClass('open');
+        $(document.body).toggleClass('lock');
+        // return false;
+    });
+    $(document).click( function(event) {
+        $('#humberger').toggleClass('active');
+        $('#drawer').toggleClass('open');
+        $(document.body).toggleClass('lock');
     });
 });
 
