@@ -1,29 +1,18 @@
-var tabs = document.getElementsByClassName
-window.addEventListener('load', function () {
-    var slide1 = document.getElementById('slide1');
-    // slide1.addEventListener('');
-},false);
-
-function clickTab() {
-
-}
-
 $(function() {
     $('#humberger').on('click', function(){
         $('#humberger').toggleClass('active');
         $('#drawer').toggleClass('open');
         $(document.body).toggleClass('lock');
+        console.log('humberger open!');
+        return false;
     });
-    $('#drawer').on('click', function() {
-        $('#humberger').toggleClass('active');
-        $('#drawer').toggleClass('open');
-        $(document.body).toggleClass('lock');
-        // return false;
+    $('#menu a[href]').on('click', function(e) {
+        console.log('jump!');
+        $('#humberger').trigger('click');
     });
-    $(document).click( function(event) {
-        $('#humberger').toggleClass('active');
-        $('#drawer').toggleClass('open');
-        $(document.body).toggleClass('lock');
+    $(document).on('click', '.lock', function(e) {
+        console.log('click lock!');
+        $('#humberger').trigger('click');
     });
 });
 
@@ -50,7 +39,6 @@ $(function() {
         }],
         customPaging: function(slick, index){
             var num = slick.$slides.eq(index).html();
-            console.log(num);
             return '●';
         }
     });

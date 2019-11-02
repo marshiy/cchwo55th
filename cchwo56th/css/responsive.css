@@ -36,7 +36,7 @@
 @media all and ( max-width: 1200px ) {
 
     html {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     body {
@@ -49,6 +49,7 @@
 
     .headerRight {
         text-align: right;
+        padding-right: 1rem;
     }
     .menuItem {
         display: none;
