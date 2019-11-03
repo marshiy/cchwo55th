@@ -295,7 +295,7 @@ a.anchor {
 }
 .guestText {
     margin-left: 1rem;
-    flex-basis: 70%;
+    /* flex-basis: 70%; */
     text-align: left;
 }
 .guestText h3 {

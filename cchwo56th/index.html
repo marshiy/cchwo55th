@@ -17,7 +17,23 @@
         <script src="js/jquery-1.8.2.min.js"></script>
         <script src="js/cchwo56th.js"></script>
         <script src="slick/slick.min.js"></script>
-
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '368244060412632');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=368244060412632&ev=PageView&noscript=1"
+        /></noscript>
+      <!-- End Facebook Pixel Code -->
     </head>
     <body>
         <!-- container start -->
@@ -90,12 +106,12 @@
                     <!-- time start -->
                     <div class="time">
                         <p>
-                            <span class="section">昼の部</span>
+                            <span class="section">午後公演</span>
                             <br class="br-sp">開場：12:30 / 開演：13:00
                         </p>
                         <p>
-                            <span class="section">夜の部</span>
-                            <br class="br-sp">開場：17:00 / 開演：17:45
+                            <span class="section">夜公演</span>
+                            <br class="br-sp">開場：17:00 / 開演：17:40
                         </p>
                     </div>
                     <!-- time end -->
@@ -117,15 +133,15 @@
                     <!-- tab start-->
                     <a id="program" class="anchor"></a>
                     <ul class="tab">
-                        <li class="select" tabindex="0">昼の部</li>
-                        <li tabindex="0">夜の部</li>
+                        <li class="select" tabindex="0">午後公演</li>
+                        <li tabindex="0">夜公演</li>
                     </ul>
                     <!-- tab end -->
                     <ul class="tabColor"></ul>
 
                     <!-- detail start -->
                     <ul class="detail">
-                        <!-- li 昼の部 start-->
+                        <!-- li 午後公演 start-->
                         <li>
                             <!-- contents (プログラム) start -->
                             <div class="contents">
@@ -133,13 +149,36 @@
                                     <span class="marker_water">プログラム</span>
                                 </h2>
                                 <div class="tunes">
-                                    <img src="https://placehold.jp/40/e8c899/ffffff/400x280.png?text=Comming%20soon">
+                                    <p>コンサートバンドとジャズアンサンブルのためのラプソディ
+                                         / ウィリアムズ</p>
+                                    <p>天空の城ラピュタよりバンドとゴスペル・コーラスのためのハレルヤ！</p>
+                                    <p>他</p>
                                 </div>
                             </div>
                             <!-- contents (プログラム) end -->
+                            <!-- contents (ゲスト) start-->
+                            <div class="contents">
+                                <h2 class="contentTitle">
+                                    <span class="marker_water">ゲスト</span>
+                                </h2>
+                                <!-- guest start -->
+                                <div class="guest">
+                                    <!-- guestText start -->
+                                    <div class="guestText">
+                                        <h3><span>クラリネット奏者</span>郡 尚恵</h3>
+                                        <!-- <p>ゲスト説明文予定</p> -->
+                                    </div>
+                                    <!-- guestText end-->
+                                    <!-- <div class="guestImg">
+                                        <img src="https://placehold.jp/e8c899/ffffff/200x280.png?text=Comming%20soon" alt="げすとしめい">
+                                    </div> -->
+                                </div>
+                                <!-- guest end -->
+                            </div>
+                            <!-- contents (ゲスト) end-->
                         </li>
-                        <!-- li 昼の部 end-->
-                        <!-- li 夜の部 start -->
+                        <!-- li 午後公演 end-->
+                        <!-- li 夜公演 start -->
                         <li class="hide">
                             <!-- contents (プログラム) start -->
                             <div class="contents">
@@ -147,14 +186,49 @@
                                         <span class="marker_water">プログラム</span>
                                     </h2>
                                     <div class="tunes">
-                                        <img src="https://placehold.jp/40/5c5f9e/ffffff/400x280.png?text=Comming%20soon" alt="げすとしめい">
+                                        <p>ディオニソスの祭 / シュミット</p>
+                                        <p>「神秘の花」― ギュスターヴ・モローに寄せて / 八木澤教司</p>
+                                        <p>レ・ミゼラブルより</p>
+                                        <p>他</p>
                                     </div>
                             </div>
                             <!-- contents (プログラム) end -->
+                            <!-- contents (ゲスト) start-->
+                            <div class="contents">
+                                <h2 class="contentTitle">
+                                    <span class="marker_water">ゲスト</span>
+                                </h2>
+                                <!-- guest start -->
+                                <div class="guest">
+                                    <!-- guestText start -->
+                                    <div class="guestText">
+                                        <h3><span>トランペット奏者</span>アレクセイ・トカレフ</h3>
+                                        <!-- <p>ゲスト説明文予定</p> -->
+                                    </div>
+                                    <!-- guestText end-->
+                                    <!-- <div class="guestImg">
+                                        <img src="https://placehold.jp/cacbe6/ffffff/200x280.png?text=Comming%20soon" alt="げすとしめい">
+                                    </div> -->
+                                </div>
+                                <!-- guest end -->
+                            </div>
+                            <!-- contents (ゲスト) end-->
                         </li>
-                        <!-- li 夜の部 end -->
+                        <!-- li 夜公演 end -->
                     </ul>
                     <!-- detail end-->
+                    <!-- common start-->
+                    <div class="common">
+                        <h2 class="contentTitle">
+                            <span class="marker_water">共通プログラム</span>
+                        </h2>
+                        <div class="tunes">
+                            <p>白鳥の湖より</p>
+                            <p>松波の街並み2019 〜みんなのオリンピック〜</p>
+                            <p>ステージドリル</p>
+                        </div>
+                    </div>
+                    <!-- common end-->
                 </div>
                 <!-- detailWrapp end -->
 
