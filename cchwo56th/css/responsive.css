@@ -36,15 +36,25 @@
 @media all and ( max-width: 1200px ) {
 
     html {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .br-sp {
+        display: inline;
     }
 
     body {
-        min-width: 380px;
+        min-width: 320px;
     }
 
     .bodyContainer {
         width: 90%;
+    }
+    .guestText {
+        text-align: center;
+        margin-left:0;
+    }
+    .guestText h3 span {
+        padding-right:0;
     }
 
     .headerRight {
@@ -95,5 +105,9 @@
         -webkit-transform: translateY(-20px) rotate(45deg);
         transform: translateY(-20px) rotate(45deg);
     }
-
+    @media all and ( max-width: 480px ) {
+        html {
+            font-size: 10px;
+        }
+    }
 }
